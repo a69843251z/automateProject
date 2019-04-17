@@ -35,6 +35,14 @@
 			<artifactId>selenium-java</artifactId>
 			<version>3.141.59</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>27.0.1-jre</version>
+		</dependency>
+
 
 		<!-- extentreport -->
 		<dependency>
@@ -55,7 +63,17 @@
 			<artifactId>moco-runner</artifactId>
 			<version>0.11.0</version>
 		</dependency>
-
-
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>

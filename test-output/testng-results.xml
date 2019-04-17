@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="reportTest" duration-ms="78" started-at="2019-04-12T08:39:21Z" finished-at="2019-04-12T08:39:22Z">
+  <suite name="Default suite" duration-ms="36" started-at="2019-04-17T06:05:33Z" finished-at="2019-04-17T06:05:33Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="78" started-at="2019-04-12T08:39:21Z" finished-at="2019-04-12T08:39:22Z">
+    <test name="Default test" duration-ms="36" started-at="2019-04-17T06:05:33Z" finished-at="2019-04-17T06:05:33Z">
       <class name="com.lh.selenium.test.testsc">
-        <test-method status="PASS" signature="tt()[pri:0, instance:com.lh.selenium.test.testsc@2b2948e2]" name="tt" duration-ms="40" started-at="2019-04-12T16:39:21Z" finished-at="2019-04-12T16:39:22Z">
+        <test-method status="PASS" signature="test4()[pri:0, instance:com.lh.selenium.test.testsc@6093dd95]" name="test4" duration-ms="22" started-at="2019-04-17T14:05:33Z" finished-at="2019-04-17T14:05:33Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tt -->
+        </test-method> <!-- test4 -->
       </class> <!-- com.lh.selenium.test.testsc -->
-    </test> <!-- Test -->
-  </suite> <!-- reportTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

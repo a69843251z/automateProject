@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [reportTest]">
-  <listeners>
-    <listener class-name="com.lh.selenium.util.ExtentTestNGIReporterListener"/>
-  </listeners>
-  <test thread-count="5" name="Test">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
     <classes>
-      <class name="com.lh.selenium.test.testsc"/>
+      <class name="com.lh.selenium.test.testsc">
+        <methods>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- com.lh.selenium.test.testsc -->
     </classes>
-  </test> <!-- Test -->
-</suite> <!-- Failed suite [reportTest] -->
+  </test> <!-- Default test -->
+</suite> <!-- Failed suite [Default suite] -->
