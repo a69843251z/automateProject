@@ -3,10 +3,21 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [reportTest]">
   <listeners>
     <listener class-name="com.lh.selenium.util.ExtentTestNGIReporterListener"/>
+    <listener class-name="com.lh.selenium.util.TestngListenerTakeShoot"/>
   </listeners>
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.lh.selenium.test.testsc"/>
     </classes>
   </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.lh.selenium.test.testsc">
+        <methods>
+          <include name="test5"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.lh.selenium.test.testsc -->
+    </classes>
+  </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [reportTest] -->

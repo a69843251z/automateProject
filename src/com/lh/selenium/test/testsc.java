@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +17,7 @@ import org.testng.annotations.Test;
 
 import com.lh.selenium.base.DriverBase;
 import com.lh.selenium.base.SelectDriver;
+import com.lh.selenium.util.getByLocator;
 
 public class testsc {
 	@Test
@@ -35,7 +37,12 @@ public class testsc {
 		System.setProperty("webdriver.gecko.driver", "D:\\myElipseProject\\automate\\resources\\geckodriver.exe");
 		System.setProperty("webdriver.firefox.bin","D:\\computerSoftware\\firefoxExplore\\firefox.exe");
 		WebDriver driver= new FirefoxDriver();
+		DriverBase a=new DriverBase("firefox");
 		driver.get("http://www.baidu.com");
+		a.takeScreenShot();
+		driver.findElement(By.id("123")).sendKeys("123");
+		
+		
 		driver.close();
 	}
 	@Test
@@ -46,12 +53,18 @@ public class testsc {
 		String dataStr=sf.format(date);
 		String path=this.getClass().getSimpleName()+"_"+dataStr+".png";
 	}
-
+	
+	@Test
+	public void test5() {
+		 throw new RuntimeException("123");
+	}
 	public static void main(String[] args) {
-		DriverBase d=new DriverBase("firefox");
-		d.get("https://blog.csdn.net/u011541946/article/details/73865109");
-		d.takeScreenShot();
-		
+		System.setProperty("webdriver.chrome.driver", "D:\\myElipseProject\\automate\\resources\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://106.39.94.231:9080/sinoiaaf/");
+		By by_password=getByLocator.getLocator("password");
+		driver.findElement(by_password).sendKeys("123");
+
 	}
 
 }

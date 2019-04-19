@@ -3,12 +3,13 @@
 <suite name="reportTest">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.lh.selenium.test.testsc">
+      <class name="com.lh.selenium.business.LoginPagePro.testLogin">
       </class>
     </classes>
   </test>
   <listeners>
   <listener class-name="com.lh.selenium.util.ExtentTestNGIReporterListener"></listener>
+  <listener class-name="com.lh.selenium.util.TestngListenerTakeShoot"></listener>
   </listeners>
   
 </suite> <!-- Suite -->
